@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+
+    <div class="w-[500px] h-[500px] mx-auto bg-slate-300 mt-10 px-16 py-10 rounded-3xl" id="main">
+        <h1 class="text-4xl text-center">Rock Paper Scissors</h1>
+
+        <div>
+            <div class="flex justify-between mt-7" id="userId">
+                <div data-value="rock" class="mychoice bg-red-400 w-[100px] h-[100px] rounded-full flex items-center justify-center text-5xl cursor-pointer">
+                    <img class="w-[60px]" src="images/rock-emoji.png" alt="">
+                </div>
+                <div data-value="paper" class="mychoice bg-red-400 w-[100px] h-[100px] rounded-full flex items-center justify-center text-5xl cursor-pointer">
+                    <img class="w-[60px]" src="images/paper-emoji.png" alt="">
+                </div>
+                <div data-value="scissors" class="mychoice bg-red-400 w-[100px] h-[100px] rounded-full flex items-center justify-center text-5xl cursor-pointer">
+                    <img class="w-[60px]" src="images/scissors-emoji.png" alt="">
+                </div>
+            </div>
+    
+            <div class="bothChoice flex items-center justify-around mt-5 text-base font-medium h-[84px]">
+                <div class="text-center flex flex-col justify-center items-center">
+                    <span class=" h-[60px]"></span>
+                    <label>Your choose</label>
+                </div>
+                <span class="text-3xl">Vs</span>
+                <div class="text-center flex flex-col justify-center items-center">
+                    <span class="h-[60px]"></span>
+                    <label>computer choose</label>
+                </div>
+            </div>
+    
+            <div class="mt-5 text-lg">
+                <span class="font-bold">Result: </span>
+                <span class="result"> </span>
+            </div>
+    
+            <div class="mt-5 text-lg">
+                <span class="font-bold">Score:</span>
+                <span class="score">Your scores: 0, Computer scores: 0 </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
